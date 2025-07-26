@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<style>
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    /* or space-between, space-around */
+    gap: 20px;
+    margin-top: 20px;
+  }
+</style>
+
 <body>
-     <a href="index.html"></a>
-     <figure>
-        <img src="MWF-IMAGES/couch1.jpg" height="400px">
-        <figcaption>luxury chairs</figcaption>
-     </figure>
+  <div class="sidebar">
+    <div class="logo"></div>
+
+
+    <ul class="menu">
+      <li><a href="Dashboard.html" class="active"><i class="fa-solid fa-grip"></i><span>Dashboard</span></a></li>
+      <li><a href="users.html"><i class="fa-solid fa-user-plus"></i></i><span>Users</span></a></li>
+      <li><a href="products.html"><i class="fa-solid fa-cubes-stacked"></i><span>Products</span></a></li>
+      <li><a href="customer-sales.html"><i class="fa-solid fa-arrow-trend-up"></i><span>Customer sales</span></a></li>
+      <li><a href="customer-sales.html"><i class="fa-solid fa-truck-field"></i><span>Supplier sales</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-magnifying-glass"><span></i><span>Search</span></a></li>
+      <li class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="main-content" style="background-color: antiquewhite;">
+    <h1 style="margin-left: 200px;">MAYONDO WOODS AND FURNITURE</h1>
+    <h5 style="margin-left: 300px;">Where wood meets Elegance!</h5>
+    <div class="card-wrapper">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">WELCOME TO MWF</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Qaulity Assurance</h6>
+          <p class="card-text">We believe that furniture is more than just a necessity, its a reflection of your personal
+          style and
+          inviting home. With a passion for craftsmanship and commitment to qaulity, we've bee dedicated to providing
+          exceptional furniture pieces that enhance the beauty and functionality of any space.</p>
+          <!-- <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Our ViSion</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Elegance</h6>
+          <p class="card-text">To provide high qaulity, stylish, and functional furniture that meets the diverse needs
+          of our customers. We strive to create pieces that not only reflect the latest desgin trends but also stands
+          the test of time, becoming treasured possessions for the years to come..</p>
+          <!-- <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">What we offer</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Solid Qaulity</h6>
+    <p class="card-text">A wide range of furniture pieces for every room in the home, from sofas and chairs to tables, desks,and beds.<br>
+    high quality materials and expert craftsmanship<br>
+  timeless desgins that blend style and functionality</p>
+    <!-- <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a> -->
+  </div>
+</div>
+    </div>
+  </div>
+
+
+
+
+  
+
+
+
+  <script src="CSS/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

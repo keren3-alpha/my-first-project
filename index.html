@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOG-IN-Page</title>
-    <link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-  </head>
-  <body style="background-color: blue;">
-    <div class="container">
-      <div class="row" id="login-form-row">
-        <div class="col-md-10"></div>
-        <div class="col-md-10">
-          <div class="card">
-            <div class="card-header bg-secondary text-white">
-              Login to your account
-            </div>
-            <div class="card-body">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOG-IN-Page</title>
+  <link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+  <style>
+    body {
+      background-image: url('MWF-IMAGES/bg1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(2px);
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    .card-header {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+    }
+
+    .extra-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    .extra-links a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+<body style="background-image: url(MWF-IMAGES/bg1.jpg)">
+  <div class="container">
+    <div class="row" id="login-form-row">
+      <div class="col-md-7"></div>
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header text-white" style="background-color: black">
+            Login to your account
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  required />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Save information</label
-                  >
-                </div>
-                <a class="btn btn-primary" href="Dashboard.html" role="button">Login</a>
-              </form>
-            </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1"> Remember me</label>
+              </div>
+              <a class="btn btn-primary" href="Dashboard.html" role="button">Login</a>
+                <div class="extra-links mt-3">
+                <a href="forgot-password.html">Forgot password?</a>
+                <a href="register.html">Create account</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="CSS/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
-  </body>
+  <script src="CSS/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
