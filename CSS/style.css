@@ -13,6 +13,7 @@ body {
   display: flex;
   height: 100vh;
   background-color: #f4f4f4;
+  
 }
 
 /* Sidebar styles */
@@ -79,6 +80,7 @@ body {
   flex: 1;
   padding: 2rem;
   background: #ebe9e9;
+  
 }
 
 /* Header (h1) */
