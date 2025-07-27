@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Users</title>
 </head>
+
 <body>
     <div class="flex min-h-screen bg-gray-100">
-  <!-- Sidebar -->
-  <aside class="w-64 bg-white shadow-md">
-    <div class="p-6 font-bold text-purple-700 text-2xl">AdminPanel</div>
-    <nav class="mt-8">
-       <a href="dashboard2.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Dashboard</a>
-      <a href="produce.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Products</a>
-      <a href="suppliers.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Suppliers</a>
-      <a href="customers.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Customers</a>
-      <a href="users2.html" class="block py-3 px-6 text-gray-700 hover:bg-purple-100">Users</a>
-      <a href="login.html" class="block py-3 px-6 text-red-700 hover:bg-red-100">Logout</a>
-    </nav>
-  </aside>
-  <!-- Main Content -->
-  <div class="flex-1 flex flex-col">
-    <!-- Top Navbar -->
-    <header class="bg-white shadow-md p-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-purple-700">Dashboard</h1>
-      <div class="flex items-center gap-4">
-        <input type="text" placeholder="Search..." class="px-4 py-2 border rounded-lg">
-        <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold">SR</div>
-      </div>
-    </header>
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-md">
+            <div class="p-6 font-bold text-blue-700 text-2xl">MWF</div>
+            <nav class="mt-8">
+                <a href="dashboard2.html" class="block py-3 px-6 text-gray-700 hover:bg-blue-100">Dashboard</a>
+                <a href="produce.html" class="block py-3 px-6 text-gray-700 hover:bg-blue-100">Products</a>
+                <a href="suppliers.html" class="block py-3 px-6 text-gray-700 hover:bg-blue-100">Suppliers</a>
+                <a href="customers.html" class="block py-3 px-6 text-gray-700 hover:bg-blue-100">Customers</a>
+                <a href="users2.html" class="block py-3 px-6 text-gray-700 hover:bg-blue-100">Users</a>
+                <a href="index.html" class="block py-3 px-6 text-red-700 hover:bg-red-100">Logout</a>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Top Navbar -->
+            <header class="bg-white shadow-md p-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold text-blue-700">Users</h1>
+                <div class="flex items-center gap-4">
+                    <input type="text" placeholder="Search..." class="px-4 py-2 border rounded-lg">
+                    <div
+                        class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
+                        SR</div>
+                </div>
+            </header>
 
-    <!-- Content -->
-    <main class="p-6 space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <p class="text-sm text-gray-500">Total Users</p>
-    <h2 class="text-3xl font-bold text-purple-700 mt-2">1,240</h2>
-  </div>
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <p class="text-sm text-gray-500">Revenue</p>
-    <h2 class="text-3xl font-bold text-green-600 mt-2">$24,500</h2>
-  </div>
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <p class="text-sm text-gray-500">New Orders</p>
-    <h2 class="text-3xl font-bold text-blue-600 mt-2">320</h2>
-  </div>
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <p class="text-sm text-gray-500">Pending Tickets</p>
-    <h2 class="text-3xl font-bold text-red-500 mt-2">12</h2>
-  </div>
-</div>
+            <!-- Content -->
+            <main class="p-6 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500">Total Users</p>
+                        <h2 class="text-3xl font-bold text-blue-700 mt-2">8</h2>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500">Revenue</p>
+                        <h2 class="text-3xl font-bold text-green-600 mt-2">$9,500</h2>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500">New Orders</p>
+                        <h2 class="text-3xl font-bold text-blue-600 mt-2">320</h2>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500">Pending Tickets</p>
+                        <h2 class="text-3xl font-bold text-red-500 mt-2">12</h2>
+                    </div>
+                </div>
 
-<div class="bg-white rounded-lg shadow-md">
-  <div class="p-4 border-b font-bold text-purple-700">User List</div>
-  <table class="w-full text-left">
-    <thead class="bg-purple-50">
-      <tr>
-        <th class="p-4">Name</th>
-        <th class="p-4">Email</th>
-        <th class="p-4">Role</th>
-        <th class="p-4">Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="border-t">
-        <td class="p-4">John Doe</td>
-        <td class="p-4">john@example.com</td>
-        <td class="p-4">Admin</td>
-        <td class="p-4 text-green-600 font-bold">Active</td>
-      </tr>
-      <tr class="border-t">
-        <td class="p-4">Jane Smith</td>
-        <td class="p-4">jane@example.com</td>
-        <td class="p-4">Editor</td>
-        <td class="p-4 text-yellow-500 font-bold">Pending</td>
-      </tr>
-      <tr class="border-t">
-        <td class="p-4">Jane Smith</td>
-        <td class="p-4">jane@example.com</td>
-        <td class="p-4">Editor</td>
-        <td class="p-4 text-yellow-500 font-bold">Pending</td>
-      </tr>
-      <tr class="border-t">
-        <td class="p-4">Jane Smith</td>
-        <td class="p-4">jane@example.com</td>
-        <td class="p-4">Editor</td>
-        <td class="p-4 text-yellow-500 font-bold">Pending</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<footer class="bg-white p-4 mt-10 text-center text-sm text-gray-400 border-t">
-  © 2025 AdminPanel. All rights reserved.
-</footer>
+                <div class="bg-white rounded-lg shadow-md">
+                    <div class="p-4 border-b font-bold text-blue-700">User List</div>
+                    <table class="w-full text-left">
+                        <thead class="bg-blue-50">
+                            <tr>
+                                <th class="p-4">Name</th>
+                                <th class="p-4">Email</th>
+                                <th class="p-4">Role</th>
+                                <th class="p-4">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t">
+                                <td class="p-4">Kale Cherub</td>
+                                <td class="p-4">kale@cheche.com</td>
+                                <td class="p-4">stock manager</td>
+                                <td class="p-4 text-green-600 font-bold">Active</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-4">Elohim Roro</td>
+                                <td class="p-4">roro@elroi.com</td>
+                                <td class="p-4">sales manager</td>
+                                <td class="p-4 text-blue-500 font-bold">on leave</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-4">Mirembe Peace</td>
+                                <td class="p-4">mirembe@peace.com</td>
+                                <td class="p-4">Records</td>
+                                <td class="p-4 text-yellow-500 font-bold">Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <footer class="bg-white p-4 mt-10 text-center text-sm text-gray-400 border-t">
+                    © 2025 Mayondo. All rights reserved.
+                </footer>
 </body>
+
 </html>
